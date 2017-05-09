@@ -7,7 +7,7 @@ using BangazonSiteMVC.Models;
 
 namespace BangazonSiteMVC.DAL
 {
-    public class AppContext
+    public class AppContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
     }
