@@ -206,6 +206,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IOrderRepository.cs" />
     <Compile Include="Controllers\IProductRepository.cs" />
@@ -286,8 +287,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+
+
+    <Folder Include="Views\Customer\" />
+
+
     <Folder Include="Views\Order\" />
+
     <Folder Include="Views\Product\" />
+
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
