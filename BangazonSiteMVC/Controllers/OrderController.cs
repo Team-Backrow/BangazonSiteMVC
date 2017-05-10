@@ -16,7 +16,6 @@ namespace BangazonSiteMVC.Controllers
             _orderRepository = orderRepository;
         }
 
-
         // GET: Order
         public ActionResult GetAnOrder(Order newOrder)
         {
