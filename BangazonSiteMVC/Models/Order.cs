@@ -5,7 +5,7 @@ using System.Web;
 
 namespace BangazonSiteMVC.Models
 {
-    public class OrderModels
+    public class Order
     {
         public int OrderId { get; set; }
         public int OrderLineItemId { get; set; }
