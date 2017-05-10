@@ -11,5 +11,6 @@ namespace BangazonSiteMVC.DAL
     {
         public AppContext() : base("BangazonMVC") { }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }
