@@ -3,6 +3,7 @@ using BangazonSiteMVC.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using BangazonSiteMVC.Models;
+using BangazonSiteMVC.DAL;
 
 namespace BangazonSiteMVC.Tests
 {
