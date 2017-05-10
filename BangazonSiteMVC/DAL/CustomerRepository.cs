@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using BangazonSiteMVC.Controllers;
+using BangazonSiteMVC.Models;
 
 namespace BangazonSiteMVC.DAL
 {
@@ -14,9 +15,14 @@ namespace BangazonSiteMVC.DAL
             _context = context;
         }
 
+        public IEnumerable<Customer> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Save(Models.Customer newCustomer)
         {
-            _context.Ducks.Add(newCustomer);
+            _context.Customers.Add(newCustomer);
             _context.SaveChanges();
         }
     }
