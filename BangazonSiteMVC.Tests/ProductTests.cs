@@ -20,7 +20,7 @@ namespace BangazonSiteMVC.Tests
             {
                 ProductId = 1,
                 ProductName = "Trucker hat",
-                ProductType = 2,
+                ProductTypeId = 2,
                 Description = "Bringin' the 00s back!",
                 CustomerId = 3
                 
