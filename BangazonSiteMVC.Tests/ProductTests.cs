@@ -14,7 +14,7 @@ namespace BangazonSiteMVC.Tests
         public void AddingAProduct()
         {
             //Arrange
-            var mockProductRepository = new Mock<ProductRepository>();
+            var mockProductRepository = new Mock<IProductRepository>();
             var controller = new ProductController(mockProductRepository.Object);
             var newProduct = new Product
             {
