@@ -3,6 +3,7 @@ using BangazonSiteMVC.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using BangazonSiteMVC.Models;
+using BangazonSiteMVC.DAL;
 
 namespace BangazonSiteMVC.Tests
 {
@@ -13,7 +14,7 @@ namespace BangazonSiteMVC.Tests
         public void AddingAProduct()
         {
             //Arrange
-            var mockProductRepository = new Mock<IProductRepository>();
+            var mockProductRepository = new Mock<ProductRepository>();
             var controller = new ProductController(mockProductRepository.Object);
             var newProduct = new Product
             {
