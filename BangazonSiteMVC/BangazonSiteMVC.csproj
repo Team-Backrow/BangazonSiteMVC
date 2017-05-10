@@ -209,13 +209,13 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ICustomerRepository.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DAL\CustomerRepository.cs" />
     <Compile Include="Controllers\IOrderRepository.cs" />
     <Compile Include="Controllers\IProductRepository.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DAL\AppContext.cs" />
-    <Compile Include="DAL\CustomerRepository.cs" />
     <Compile Include="DAL\ProductRepository.cs" />
     <Compile Include="DAL\OrderRepository.cs" />
     <Compile Include="Global.asax.cs">
