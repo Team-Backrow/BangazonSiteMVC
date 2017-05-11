@@ -6,7 +6,7 @@ using System.Web;
 
 namespace BangazonSiteMVC.Models
 {
-    public class PaymentTypes
+    public class PaymentType
     {
         [Key]
         public int PaymentTypeId { get; set; }
