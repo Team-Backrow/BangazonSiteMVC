@@ -17,9 +17,10 @@ namespace BangazonSiteMVC.Controllers
         }
 
         // GET: Order
-        public ActionResult GetAnOrder(Order newOrder)
+        public ActionResult GetAnOrder(int id)
         {
-            return View();
+            _orderRepository.GetOrder(id);
+            return View("Checkout",order);
         }
     }
 }
