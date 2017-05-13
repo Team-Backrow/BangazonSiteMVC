@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BangazonSiteMVC.Models;
 
 namespace BangazonSiteMVC.Controllers
 {
     public class CustomerController : Controller
     {
-        // GET: Customer
-        public ActionResult Index()
+        readonly ICustomerRepository _customerRepository;
+
+        public CustomerController(ICustomerRepository customerRepository)
         {
-            return View();
+            _customerRepository = customerRepository;
+        } 
+        // GET: Customer
+        public ActionResult GetACustomer(int id)
+        {
+            var customer = _customerRepository.GetCustomers(id);
+            return View("Customer", customer);
         }
 
         // GET: Customer/Details/5
@@ -28,13 +36,13 @@ namespace BangazonSiteMVC.Controllers
 
         // POST: Customer/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Customer newCustomer)
         {
             try
             {
-                // TODO: Add insert logic here
+                _customerRepository.Save(newCustomer);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("AddProduct");
             }
             catch
             {

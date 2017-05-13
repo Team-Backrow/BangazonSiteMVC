@@ -15,9 +15,14 @@ namespace BangazonSiteMVC.DAL
             _context = context;
         }
 
-        public IEnumerable<Customer> GetAll()
+        public Customer GetCustomers(int id)
         {
-            throw new NotImplementedException();
+            var newCustomer = new Customer
+            {
+                Id = 1,
+                FullName = "Josh Kilgore"
+            };
+            return newCustomer;
         }
 
         public void Save(Models.Customer newCustomer)
