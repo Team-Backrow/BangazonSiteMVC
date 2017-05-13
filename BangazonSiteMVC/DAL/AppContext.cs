@@ -14,5 +14,6 @@ namespace BangazonSiteMVC.DAL
         public DbSet<Order> Orders { get; set; }
 
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<OrderLineItem> OrderLineItems { get; set; }
     }
 }
