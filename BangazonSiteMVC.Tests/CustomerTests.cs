@@ -22,8 +22,10 @@ namespace BangazonSiteMVC.Tests
             };
 
             //Act
+            controller.AddCustomer(newCustomer);
 
             //Assert
+            customerRepository.Verify(x => x.Save(newCustomer), Times.Once);
         }
     }
 }
