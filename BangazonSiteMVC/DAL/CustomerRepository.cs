@@ -26,7 +26,7 @@ namespace BangazonSiteMVC.DAL
         }
 
         public void Save(Models.Customer newCustomer)
-        {
+        { 
             _context.Customers.Add(newCustomer);
             _context.SaveChanges();
         }
