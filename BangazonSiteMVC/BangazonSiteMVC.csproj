@@ -209,13 +209,16 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ICustomerRepository.cs" />
+    <Compile Include="Controllers\IOrderLineItemRepository.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OrderLineItemRepository.cs" />
     <Compile Include="DAL\CustomerRepository.cs" />
     <Compile Include="Controllers\IOrderRepository.cs" />
     <Compile Include="Controllers\IProductRepository.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DAL\AppContext.cs" />
+    <Compile Include="DAL\OrderLineItemRepo.cs" />
     <Compile Include="DAL\ProductRepository.cs" />
     <Compile Include="DAL\OrderRepository.cs" />
     <Compile Include="Global.asax.cs">
@@ -226,6 +229,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderLineItem.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\PaymentTypes.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
@@ -386,6 +390,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Customer\" />
+    <Folder Include="Views\OrderLineItemRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
