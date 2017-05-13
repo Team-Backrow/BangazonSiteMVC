@@ -9,5 +9,7 @@ namespace BangazonSiteMVC.Models
     {
         public int Id { get; set; }
         public string FullName { get; set; }
+
+        public virtual List<Customer> Customers { get; set; }
     }
 }

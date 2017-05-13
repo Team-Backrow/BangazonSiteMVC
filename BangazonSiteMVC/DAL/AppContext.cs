@@ -9,7 +9,7 @@ namespace BangazonSiteMVC.DAL
 {
     public class AppContext : DbContext
     {
-        public AppContext() : base("BangazonMVC") { }
+        public AppContext() : base("DefaultConnection") { }
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
 
