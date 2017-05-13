@@ -12,8 +12,9 @@ namespace BangazonSiteMVC.DAL
         public AppContext() : base("DefaultConnection") { }
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
-
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<PaymentType> PaymentTypes { get; set; }
         public DbSet<OrderLineItem> OrderLineItems { get; set; }
+
     }
 }
