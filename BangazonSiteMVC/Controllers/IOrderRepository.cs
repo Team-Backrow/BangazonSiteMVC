@@ -10,5 +10,6 @@ namespace BangazonSiteMVC.Controllers
     public interface IOrderRepository
     {
         void Save(Order newOrder);
+        Order GetOrder(int id);
     }
 }

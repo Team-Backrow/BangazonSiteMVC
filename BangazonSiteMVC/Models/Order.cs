@@ -8,7 +8,8 @@ namespace BangazonSiteMVC.Models
     public class Order
     {
         public int OrderId { get; set; }
-        public int OrderLineItemId { get; set; }
-        public int PaymentTypeId { get; set; }
+        public virtual List<OrderLineItem> LineItems { get; set; }
+        public virtual PaymentType PaymentType { get; set; }
+
     }
 }
