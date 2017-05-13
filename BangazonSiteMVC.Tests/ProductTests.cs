@@ -23,7 +23,7 @@ namespace BangazonSiteMVC.Tests
                 ProductType = 2,
                 Description = "Bringin' the 00s back!",
                 CustomerId = 3
-                
+
             };
 
             //Act
@@ -31,7 +31,7 @@ namespace BangazonSiteMVC.Tests
 
 
             //Assert
-            mockProductRepository.Verify(x => x.Save(newProduct),Times.Once);
+            mockProductRepository.Verify(x => x.Save(newProduct), Times.Once);
 
         }
     }

@@ -7,9 +7,9 @@ using BangazonSiteMVC.Models;
 
 namespace BangazonSiteMVC.Controllers
 {
-    interface ICustomerRepository
+    public interface ICustomerRepository
     {
         void Save(Customer newCustomer);
-        IEnumerable<Customer> GetAll();
+        Customer GetCustomers(int id);
     }
 }
