@@ -14,5 +14,7 @@ namespace BangazonSiteMVC.Models
         public int CustomerId { get; set; }
 
         public string CardType { get; set; }
+
+        public virtual Customer Customer { get; set; }
     }
 }
