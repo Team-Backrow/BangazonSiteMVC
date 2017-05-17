@@ -29,6 +29,10 @@ namespace BangazonSiteMVC.DependencyResolution {
                     scan.WithDefaultConventions();
 					scan.With(new ControllerConvention());
                 });
+<<<<<<< HEAD
+            //For<IExample>().Use<Example>();
+=======
+>>>>>>> master
         }
 
         #endregion
