@@ -19,7 +19,7 @@ namespace BangazonSiteMVC.Controllers
         // GET: Product
         public ActionResult Index()
         {
-            return View();
+            return View("Product");
         }
 
 
