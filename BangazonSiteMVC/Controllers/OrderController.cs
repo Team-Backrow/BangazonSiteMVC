@@ -22,5 +22,10 @@ namespace BangazonSiteMVC.Controllers
            var order =  _orderRepository.GetOrder(id);
             return View("Checkout",order);
         }
+
+        public ActionResult Checkout()
+        {
+            return View(new Order { LineItems = new List<OrderLineItem> { new OrderLineItem { ProductId = 1 } } });
+        }
     }
 }
