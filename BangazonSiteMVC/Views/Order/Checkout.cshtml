@@ -9,7 +9,7 @@
 <div>
     <h4>Order</h4>
     <hr />
-    <dl class="dl-horizontal">
+    @*<dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.PaymentType.CardType)
         </dt>
@@ -24,7 +24,19 @@
         {
             Html.RenderPartial("OrderLineItems", item);
         }
-    }
+    }*@
+
+    <table>
+        @foreach (var item in Model.LineItems)
+        {
+            @Html.Partial("OrderLineItems", item);
+            <tr>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.OrderLineItemId })
+                </td>
+            </tr>
+        }
+    </table>
 
 </div>
 <p>
